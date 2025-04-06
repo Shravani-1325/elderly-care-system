@@ -30,7 +30,7 @@ def get_connection():
         port=5432
     )
 
-# Fetch user IDs from database using agent function
+# Fetching user IDs from database using agent function
 try:
     user_ids = get_user_ids()
 except Exception as e:
@@ -94,7 +94,7 @@ if page == "Dashboard":
 
         st.subheader("🫀 Bubble Chart: BP vs Temp (Heart Rate Zones)")
 
-        # Optional: create bins for heart rate
+      
         health_df['hr_zone'] = pd.cut(health_df['heart_rate'], bins=[0, 60, 80, 100, 200],
                                     labels=["Low", "Normal", "Elevated", "High"])
 
