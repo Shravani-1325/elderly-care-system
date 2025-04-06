@@ -184,7 +184,6 @@ The Streamlit frontend has:
 - 📊 Plotly charts to visualize trends  
 - 🧠 Intelligent alerts when a prediction is critical
 
-Also included: **“Auto Predict”** button that fetches latest user data and provides smart alerts.
 
 ---
 
@@ -200,11 +199,14 @@ Raw Dataset ─▶ Data Cleaning ─▶ ML Training ─▶ Model (.pkl) ─▶ F
 
 ## 📍 Prediction Examples
 
-| Agent        | Input Values                                  | Output           |
-|--------------|------------------------------------------------|------------------|
-| Health       | BP: 180/120, HR: 110, Temp: 102                | ❗ Critical       |
-| Safety       | Event: Fall, Location: Bathroom, Call: No      | ⚠️ Emergency      |
-| Reminder     | Task: Medicine, Time: 8 AM, Ack: No            | ❌ Missed Task    |
+### 🧠 Clinical Heart Rate Zones (General):
+| Range (bpm) | Status     |
+|-------------|------------|
+| < 60        | Low        |
+| 60–100      | Normal     |
+| 101–120     | Elevated   |
+| > 120       | High       |
+
 
 ---
 
